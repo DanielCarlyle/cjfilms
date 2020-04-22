@@ -2,22 +2,51 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
 /* var text-decoration */
+html {
+  background-color: #000;
+}
+
+html, body {
+  min-height: 100%;
+}
+
 /*--
 	Common Css
 --*/
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  color: gray;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  width: 100%;
+  height: 100vh;
+  margin-top: 6em;
 }
 
-.bg-light {
-  background-color: #fffffd!important;
+.bg-dark {
+  background-color: #202020!important;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgb(215, 34, 39);
+  color: gray;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.navbar .logo-title {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.navbar .logo-subtitle {
+  display: block;
+  color: #b4b8b5;
+  text-transform: uppercase;
+  font-size: 1.24em;
 }
 
 .btn-primary {
@@ -125,31 +154,38 @@ font header .navbar-default .navbar-nav li a:hover {
 /*---------------------------------------------
 					Index Start 
 -----------------------------------------------*/
-/*--
-	Slider Start 
---*/
-#slider {
-  background: url(../img/shaw_boxing_2019_banner_image-2850.jpg) no-repeat;
-  background-size: cover;
-  /* background-attachment: fixed; */
-  background-position: top right;
-  padding: 200px 0 280px 0;
-  position: relative;
-  min-height: 75vh;
+
+.vimeo-container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #6c757d, #0a0909);
+  opacity: 0.2;
+  z-index: -1;
 }
 
 
-  #slider:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left, #ff0e18, #0a0909);
-    opacity: 0.8;
+.vimeo-container {
+  margin: 0 auto;
+  background: inherit;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.item1 {
+  padding: 10px;
+  //border: 5px solid rgb(17, 105, 121);
+  //background-color: rgba(17, 105, 121, 0.1);
+  //border-radius: 5px;
 }
 
 
@@ -834,7 +870,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	footer Start 
 --*/
 footer {
-  background: #F5F5F5;
+  background: #343a40;
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
@@ -847,22 +883,22 @@ footer p {
 footer a {
   color: #595959;
 }
-footer .footer-manu {
+footer .footer-menu {
   padding-bottom: 25px;
 }
-footer .footer-manu ul {
+footer .footer-menu ul {
   margin: 0px;
   padding: 0px;
 }
-footer .footer-manu ul li {
+footer .footer-menu ul li {
   display: inline-block;
   padding: 0px 20px;
 }
-footer .footer-manu ul li a {
+footer .footer-menu ul li a {
   display: inline-block;
   color: #494949;
 }
-footer .footer-manu ul li a:hover {
+footer .footer-menu ul li a:hover {
   color: #000;
 }
 
