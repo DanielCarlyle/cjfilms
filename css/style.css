@@ -174,18 +174,19 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0 auto;
   background: inherit;
   width: 100%;
-  height: 100vh;
+  /*
+    height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   z-index: 1000;
 }
 
 .item1 {
   padding: 10px;
-  //border: 5px solid rgb(17, 105, 121);
+  /*border: 5px solid rgb(17, 105, 121);
   //background-color: rgba(17, 105, 121, 0.1);
-  //border-radius: 5px;
+  //border-radius: 5px; */
 }
 
 
@@ -193,10 +194,8 @@ div#masonry {
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
-  //: ;
   justify-content: center;
-  height: 100vw;
-  //: ;
+  height: 100%;
   /* max-width: 800px; */
   font-size: 0;
   max-width: 8; 
