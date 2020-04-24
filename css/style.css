@@ -106,6 +106,27 @@ body {
 
  }
 
+ p {
+  /*max-width: 650px; */
+}
+
+a {
+  color: rgba(0, 0, 0, 0.7);
+
+}
+
+a:visited {
+  color: #00b8b8;
+}
+
+a:hover {
+  color: #117a8b;
+}
+
+a:active {
+  color: #00b8b8;
+}
+
 h1,
 h2,
 h3,
@@ -581,14 +602,15 @@ div#masonry:hover img:hover { opacity: 1; }
 
 .image-wrap img {
   width: 100%;
-  animation: move 40s ease;
-  /* Add infinite to loop. */
+  /* Add infinite to loop. 
   
   -ms-animation: move 40s ease infinite;
   -webkit-animation: move 40s ease infinite;
   -0-animation: move 40s ease infinite;
   -moz-animation: move 40s ease infinite;
   position: absolute;
+    animation: move 40s ease;
+  */
 }
 
 @-webkit-keyframes move {
@@ -1047,7 +1069,7 @@ div#masonry:hover img:hover { opacity: 1; }
 	footer Start 
 --*/
 footer {
-  background: floralwhite;
+  background: rgba(232, 230, 225, 0.25);
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
@@ -1336,89 +1358,6 @@ h5
 
 */
 
-.shaw-text {
-  font-size: 6em;
-  line-height: .4;
-  font-weight: 800;
-  /* font-family: Raleway, Arial, sans-serif; */
-  font-family: 'Open Sans', sans-serif;
-  background: transparent;
-  padding: 0;
-  text-align: left;
-}
-
-
-.shaw-text h1 time {
-  font-size: 53%;
-  color: red;
-  font-weight: 600;
-}
-
-.h3-shaw-red {
-  font-size: 1.1em;
-  color: #c41b20;
-}
-
-.shaw-white {
-  font-size: 1.3em;
-  color: #f9f9f9;
-}
-
-h4,
-h5
-{
-  color:#111820;
-}
-
-h1, .page-title {
-  font-weight: 600;
-  font-size: 2em;
-  line-height: 1.0909090909090908em;
-  margin-top: 0.8181818181818181em;
-  margin-bottom: 0.27272727272727em;
-}
-
-h2, .h2 {
-  font-weight: 600;
-  font-size: 1.2375em;
-  font-size: 1em;
-  line-height: 1.5483870967741935em;
-  margin-top: 0.7741935483870968em;
-  margin-bottom: 0.7741935483870968em;
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 1.375em;
-  line-height: 1.0909090909090908em;
-  margin-top: 1.0909090909090908em;
-  margin-bottom: 0em;
-}
-
-h4 {
-  font-weight: 600;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0em;
-}
-
-h5 {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0em;
-}
-
-h6 {
-  color: #a5a5a5;
-  font-weight: 300;
-  font-size: 0.8em;
-  line-height: 1.5em;
-  margin-top: 0.8em;
-  margin-bottom: 0;
-}
 
 p,
 ul,
@@ -1479,26 +1418,6 @@ background: black;
 padding: 1em;
 }
 
-p {
-  /*max-width: 650px; */
-}
-
-a {
-  color: #dfd5d1;
-
-}
-
-a:visited {
-  color: #00b8b8;
-}
-
-a:hover {
-  color: #117a8b;
-}
-
-a:active {
-  color: #00b8b8;
-}
 
 .button {
   text-transform: uppercase;
@@ -1545,177 +1464,6 @@ a:active {
   }
 
 
-/**
-* Header Styles
-*/
-
-.header {
-  background-color: #fff;
-  padding: 2em;
-  overflow: auto;
-  bottom: auto;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 16;
-}
-
-.logo {
-  width: 100px;
-  display: block;
-  float: left;
-  margin-left: 2em;
-  margin-top: 1em;
-}
-
-.main-navigation {
-  float: right;
-  margin-top: 2em;
-  list-style: none;
-  padding-top: 4em;
-  /* background: deepskyblue; */
-  /* background: rgb(36, 33, 15); */
-  margin: 0 0px 0em;
-  /* border: 1px solid #33cccc; */
-  border-radius: 3px;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
-}
-
-.main-navigation li {
-  list-style-type: none;
-  float: left;
-  margin-right: 1.5em;
-}
-
-.main-navigation a {
-color: #3d1927;
-text-decoration: none;
-text-transform: uppercase;
-letter-spacing: .1em;
-display: block;
-padding: 0 1em;
-transition: .5s all;
-font-size: 1.25em;
-}
-
-.main-navigation a:hover {
-  color: #00b8b8;
-}
-
-#menu-icon {
-  display: none;
-}
-
-/* secondary pages styling */
-.secondary-page {
-  margin-bottom: 1em;
-  min-height: 80vh;
-  background-color: white;
-  margin-top: 2em;
-}
-.secondary-page h2 {
-  font-size: 2rem;
-  line-height: 1.7;
-  font-weight: 200;
-  padding: 2em 36px;
-}
-
-@media only screen and (max-device-width: 768px) {
-  .secondary-page h2 {
-    font-size: 1.5rem;
-    line-height: 2;
-    font-weight: 300;
-    margin-top: 6rem;
-    padding: 1em 24px;
-}
-}
-
-
-/**
-* Sidebar Styles
-*/
-
-.sidebar {
-  background: #5da87b;
-  float: right;
-  width: 30%;
-  padding: 1em;
-}
-
-.sidebar .widget-title, .sidebar .widget_text {
-  color: #fff;
-}
-
-/**
-* Front-Page/Home Template
-*/
-
-.home h1, .home h2, .home h3 {
-color: #fff;
-/*font-family: 'Raleway'; */
-font-family: 'Open Sans', sans-serif;
-line-height: 1.2em;
-font-weight: lighter;
-}
-
-.home-hero-section {
-  background: linear-gradient( to bottom, #c4181f, rgba(51, 48, 48, 0.5)), url(http://shawboxing.com/wp-content/themes/shawboxing/images/shaw_boxing_2019_banner_image-2850.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
-  min-height: 550px;
-  position: relative;
-  /*height: 100vh; */
-  transition: all 0.5s ease;
-}
-
-.hero-content {
-  background: rgba(7, 6, 2, 0.4);
-  float: right;
-  border-top-left-radius: 4%;
-  width: 45%;
-  border-bottom-left-radius: 0%;
-  min-width: 450px;
-  padding: 5em 4em;
-  /* margin-top: 30em; */
-  text-align: left;
-  color: #fff;
-}
-.home .shaw-text {
-font-size: 6em;
-line-height: .4;
-font-weight: 800;
-/*font-family: Raleway, Arial, sans-serif;*/
-font-family: 'Open Sans', sans-serif;
-background: transparent;
-padding: 0;
-text-align: left;
-}
-.home h1 time{
-font-size: 53%;
-color: red;
-font-weight: 600;
-}
-.hero-content p {
-  font-size: 1.175em;
-  font-weight: 300;
-  line-height: 1.5;
-  margin-top: 1.0909090909090908em;
-}
-
-.button-home {
-  display: block;
-  width: 300px;
-  padding: 1em 0;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  float: left;
-}
-
 .button-purple {
   background: #9d4eb6;
 }
@@ -1746,386 +1494,6 @@ font-weight: 600;
 
 .button-maroon:hover {
   background: #0b0b0b;
-}
-
-
-.home-philosophy-section,
-.home-location-section {
-  box-sizing: border-box;
-  font-size: 1.2em;
-  line-height: 1.8;
-  color: #fff;
-  width: 50%;
-  /*margin-top: 1em;
-  margin-bottom: 1em; */
-  padding: 1.5em;
-  height: 567px;
-  text-align: center;
-}
-
-.home-philosophy-section {
-  background: #23212d;
-  /*background: url(images/home-philosophy-section-bg.jpg) no-repeat;
-  background-size: cover; */
-  float: left;
-}
-
-.home-location-section {
-  /*background: url(images/toronto-skyline.jpg) no-repeat; */
-      background: linear-gradient( rgb(35, 33, 45), rgba(205, 220, 57, .1) ), url(../img/toronto-863428_640.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 475px;
-  float: right;
-  text-shadow: 1px 1px 1px #000;
-  /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-/*filter: grayscale(100%); */
-}
-
-.home-location-section p, .home-philosophy-section p {
-  max-width: none;
-}
-
-
-.home-featured-instructors-section {
-  background: #292527;
-  margin: 0em 0 1em;
-  /* background-size: cover; */
-  clear: both;
-  /* overflow: auto; */
-  padding: 1em 0;
-}
-
-.featured-instructors-width-wrapper {
-   display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -ms-justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-  .home-featured-instructors-section h2 {
-    text-align: center;
-    padding-top: 1.5em;
-    color: #fff !important;
-    font-size: 1.75em;
-}
-
-.home-featured-instructors-section h3 {
-  text-align: center;
-  padding-top: 1.5em;
-  color: #fff !important;
-  font-size: 1.25em;
-}
-
-
-.featured-instructor {
-  color: #fff;
-  text-align: center;
-  line-height: 1.9em;
-  width: 30%;
-  flex-direction: row-reverse;
-  float: left;
-  margin: 1em 1em 6em 1em;
-  padding: 1em;
-  max-width: 350px;
-  box-shadow: none;
-  box-sizing: border-box;
-  transition: .5s all;
-}
-
-.featured-instructor:hover {
-  box-shadow: 0 0 20px 2px #0d0d0d;
-}
-
-.featured-instructor h3 {
-  margin-bottom: .5em;
-}
-
-.featured-instructor img {
-  width: 275px;
-  border-radius: 50%;
-}
-
-.featured-instructor-pink {
-  //background: #b02b32;
-  background: #8c0935;
-}
-
-.featured-instructor-pink h3 {
-  color: #00b8b8;
-}
-
-.featured-instructor-teal {
-  //background: #00b8b8;
-  background: #1c2b2b;
-}
-
-.featured-instructor-teal h3 {
-  color:  #de3d83;
-}
-
-.featured-instructor-purple {
-  //background: #4f2f35;
-  background: #42124a;
-}
-
-.featured-instructor-purple h3 {
-  color: #5da87b;
-}
-
-.featured-instructor .button:hover {
-  background:  #5da87b;
-}
-
-/**
-*  Section Styling
-
-
-.section .table h2, h3 {
-  padding-top: 1.5em;
-  padding-bottom: 1em;
-  }
-
-*/
-
-.sponsors {
-  background: #ffffff;
-}
-.sponsors .helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-.table {
-  background: #ffffff;
-}
-
-.table h2 {
-  color: #000;
-  font-size: 1.75em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.table-text {
-  color: #333;
-  font-size: 0.8em;
-}
-
-.table img{
-  width: 900px;
-  margin: 0 auto;
-}
-.partners{
-  background: #292527;
-  color: #fcfcfc;
-}
-  .partners h2 {
-    text-align: center;
-    margin-bottom: 1em;
-    color: #982a32 !important;
-    font-size: 1.75em;
-}
-.partners h3 {
-    color: #982a32;
-   margin-top: 0em;
-}
-.partners p{
-  font-size: 16px !important;
-  line-height: 1.3;
-  font-weight: 300;
-}
-.red-divider:after{
-  border-right: 2px solid rgb(193,26,36);
-  border-radius: 24px;
-  content: "";
-  height: 100%;
-  position: absolute;
-  top: 16.3px;
-  right: -15px;
-}
-
-.contact {
-  position: relative;
-  background: #231f21;
-  padding: 2em 0;
-  min-height: 337px;
-  color: #fff;
-}
-
-.contact h2, h3, p {
-color:  #000;
-}
-
-/* --- Table Styling ---------------------------- */
-
-.my_planHeader {
-    text-align: center;
-    color: white;
-    padding-top:0.2em;
-    padding-bottom:0.2em;
-}
-.my_planTitle {
-    font-size:0.8em;
-    font-weight: 200;
-}
-.my_planPrice {
-    font-size:1.4em;
-    font-weight: bold;
-}
-.my_planDuration {
-    margin-top: -0.6em;
-}
-
-@media (max-width: 768px) {
-    .my_planTitle {
-        font-size:small;
-    }
-}
-
-/* --- Features ------------------------- */
-
-.my_feature {
-    line-height:2.8em;
-}
-
-@media (max-width: 768px) {
-    .my_feature {
-        text-align: center
-    }
- }
-
-.my_featureRow {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    border: 0.1em solid rgb(163, 163, 163);
-}
-
-/* --- Plan 1 --------------------------- */
-.my_plan1 {
-    background: rgb(224,234,242);
-}
-
-.my_planHeader.my_plan1 a {
-    background: #a94442;
-    color:white;
-}
-
-.my_planHeader.my_plan1 {
-   background: rgb(225, 58, 40);
-   border-bottom: thick solid rgb(81, 81, 82);
-}
-
-/* --- Plan 2 --------------------------- */
-.my_plan2 {
-    background: rgb(230,235,218);
-}
-
-.my_planHeader.my_plan2 a {
-    background: #337ab7;
-    color:white;
-}
-
-.my_planHeader.my_plan2 {
-  background: rgb(32, 68, 156);
-  border-bottom: thick solid rgb(81, 81, 82);
-}
-
-/* --- Plan 3 --------------------------- */
-.my_plan3 {
-    background: rgb(254,235,212);
-}
-
-.my_planHeader.my_plan3 a {
-    background: #3c763d;
-    color:white;
-}
-
-.my_planHeader.my_plan3 {
-    background: rgb(93, 186, 58);
-    border-bottom: thick solid rgb(81, 81, 82);
-}
-
-.my_planFeature {
-    text-align: center;
-    font-size: 2em;
-}
-
-.my_planFeature i.my_check {
-    color: green;
-}
-
-
-/* --- Plan 4 --------------------------- */
-.my_plan4 {
-    background: gold;
-}
-
-.my_planHeader.my_plan4 a {
-    background: rgb(199, 127, 40);
-    color:white;
-}
-
-.my_planHeader.my_plan4 {
-    background: rgb(209, 162, 24);
-    border-bottom: thick solid rgb(81, 81, 82);
-}
-
-.my_planFeature {
-    text-align: center;
-    font-size: 2em;
-}
-
-.my_planFeature i.my_check {
-    color: green;
-}
-
-/* Event Gallery Images */
-
-.event-list img {
-    display: block;
-    max-width: 100%;
-}
-
-#event .event-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-#event .event-list .event-item{
-    width: 50%;
-    height: 100%;
-    line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 1em;
-    text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-#event .event-list .event-item {
-    width: 33.3333333334%;
-}
-}
-@media screen and (min-width: 900px) {
-#event .event-list .event-item {
-  width: 25%;
-}
-}
-
-@media screen and (min-width: 1200px) {
-#event .event-list .event-item {
-  width: 16.666667%;
-}
 }
 
 
