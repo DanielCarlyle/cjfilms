@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
 /* var text-decoration */
 html {
-  background-color: #000;
+  background-color: #ffffff;
 }
 
 html, body {
@@ -17,7 +17,7 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: gray;
-  background-color: #000;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   text-align: justify;
@@ -30,17 +30,21 @@ body {
   background-color: #202020!important;
 }
 
+.bg-light {
+  background-color: #ffffff!important;
+}
+
 .navbar-light .navbar-nav .nav-link {
-  color: gray;
+  color: #000;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
-    font-size: 1.05em;
-    text-transform: uppercase;
-    font-weight: 400;
+  color: rgba(0,0,0,1);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .navbar .logo-title {
@@ -119,7 +123,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 15px;
+  font-size: 1em;
   line-height: 28px;
 }
 ul {
@@ -190,6 +194,10 @@ font header .navbar-default .navbar-nav li a:hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: .25rem 0em 1em;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar-brand {
@@ -1039,7 +1047,7 @@ div#masonry:hover img:hover { opacity: 1; }
 	footer Start 
 --*/
 footer {
-  background: #090a0a;
+  background: floralwhite;
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
@@ -1628,61 +1636,6 @@ font-size: 1.25em;
 
 
 /**
-* Footer Styles
-*/
-
-.footer {
-  /*margin-top: 1em; */
-  padding: 1em 0 3em 0;
-  background: #252121;
-  clear: both;
-}
-
-.footer-navigation {
-/* max-width: 700px; */
-/* margin: 1em auto; */
-/* margin: 0 auto; */
-/* margin-left: auto; */
-/* margin-right: auto; */
-display: flex;
-justify-content: center;
-padding-top: 4em;
-}
-
-.footer-navigation li {
-  list-style-type: none;
-  float: left;
-}
-
-.footer-navigation a {
-  color: #00b8b8;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  display: block;
-  padding: 0 1em;
-  transition: .5s all;
-}
-
-.footer-navigation a:hover {
-  color: #01d8d8;
-}
-
-.footer-sponsor {
-
-width: 225px;
-  box-shadow: 2px 2px 12px #8e8585;
-
-}
-
-.copyright {
-  max-width: 960px;
-  margin: 2em auto;
-  clear: left;
-  text-align: center;
-}
-
-/**
 * Sidebar Styles
 */
 
@@ -2007,7 +1960,7 @@ font-weight: 600;
 }
 
 .contact h2, h3, p {
-color: #fff;
+color:  #000;
 }
 
 /* --- Table Styling ---------------------------- */
