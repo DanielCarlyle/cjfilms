@@ -36,10 +36,25 @@ body {
   text-transform: uppercase;
 }
 
-.navbar .logo-title {
-  color: #FFF;
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,.5);
+  font-size: 1.05em;
   text-transform: uppercase;
-  font-size: 2em;
+  font-weight: 400;
+}
+
+.navbar .logo-title {
+    /* color: #FFF; */
+    text-transform: uppercase;
+    font-size: 43px;
+    background-color: #355673;
+    background-image: linear-gradient(45deg, #17a2b8, #c7e7ea);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .navbar .logo-subtitle {
@@ -47,6 +62,9 @@ body {
   color: #b4b8b5;
   text-transform: uppercase;
   font-size: 1.24em;
+  margin-top: -33px;
+  z-index: 100;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .btn-primary {
@@ -192,19 +210,28 @@ font header .navbar-default .navbar-nav li a:hover {
 
 
 div#masonry { 
+  /*
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100%;
-  /* max-width: 800px; */
+  height: 100%;*/
+   max-width: 1000px; 
   font-size: 0;
   max-width: 8; 
 }
 div#masonry img {  
-  width: 33.3%;
+  width: 50%;
   transition: .8s opacity;
 } 
+
+@media only screen and (min-width: 768px) {
+  div#masonry img {  
+    width: 33.3%;
+    transition: .8s opacity;
+  } 
+}
+
 
 div#masonry:hover img { opacity: 0.3; }
 div#masonry:hover img:hover { opacity: 1; } 
@@ -227,6 +254,45 @@ div#masonry:hover img:hover { opacity: 1; }
   padding: 2em 0;
   min-height: 85vh;
 }
+
+.bio-section__heading {
+  font-size: 2em;
+  text-align: left;
+}
+
+.bio-section hr {
+    /* border: solid 3px #fff; */
+    height: 3px;
+    background: gray;
+    width: 68%;
+    content: '';
+}
+
+.bio-section__copy {
+  margin-top: 1em;
+}
+
+
+/*--
+  Work Modal Code
+  --*/
+  #glassAnimalsVideo {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
 
 /*--
 	blog
@@ -934,7 +1000,7 @@ div#masonry:hover img:hover { opacity: 1; }
 	footer Start 
 --*/
 footer {
-  background: #343a40;
+  background: #090a0a;
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;

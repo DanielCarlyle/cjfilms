@@ -5,22 +5,75 @@ title: CJ Films Work
 
 {% include nav.html %}
 
-
-
 <div class="container">
     <div class="row">
         <div class="col-md-12">
 
+
           <div id="masonry">
-            <img src="img/1 TWS poster.jpg" alt="tws poster">
-            <img src="img/10 htwe.jpg" alt="htwe poster">
-            <img src="img/12 TRAPCITY_Final.jpg" alt="trap city poster">
+
+            <a data-toggle="modal" data-target="#glassAnimals">
+                <img src="img/1 TWS poster.jpg" alt="tws poster"></a>
+
+                <a data-toggle="modal" data-target="#glassAnimals">
+                    <img src="img/1 TWS poster.jpg" alt="tws poster"></a>
+
+          
+          <div class="modal fade" id="glassAnimals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Glass Animals</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe id="glassAnimalsVideo" src="https://www.youtube.com/embed/PhdtdUljThU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger">Track Artist</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      
+      <div class="modal fade" id="glassAnimals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Glass Animals</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe id="glassAnimalsVideo" src="https://www.youtube.com/embed/PhdtdUljThU" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Track Artist</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
             <img src="img/2 measureposter.jpg" alt="meausure poster">
             <img src="img/3 artofmore.jpg" alt="art of more poster">
-            <img src="img/9 Bitchin Kitchen poster.jpg" alt="Bitchin Kitchen TV show poster">
-            <img src="img/8 WATM poster.jpg" alt="WATM poster">
+            <img src="img/4 rpm.jpg" alt="RPM Movie poster">
+            <img src="img/5 Black white blue.jpg" alt="Black White Blue Film poster">
             <img src="img/6 BURNERSBAY_FINAL.jpg" alt="burnersbay movie poster">
             <img src="img/7 greta.jpg" alt="great movie poster">
+            <img src="img/8 WATM poster.jpg" alt="WATM poster">
+            <img src="img/9 Bitchin Kitchen poster.jpg" alt="Bitchin Kitchen TV show poster">
+            <img src="img/10 htwe.jpg" alt="htwe poster">
+            <img src="img/11 MDG.jpg" alt="MDG Poster">
+            <img src="img/12 TRAPCITY_Final.jpg" alt="trap city poster">
+
         </div>
 
 
@@ -28,3 +81,25 @@ title: CJ Films Work
 
     </div>
 </div>
+
+<script>
+
+$(document).ready(function(){
+    /* we get the YouTube video url and store it in a variable */
+    var url = $("#glassAnimalsVideo").attr('src');
+
+    /* when the modal gets closed, the delete the url for the video */
+    $("#glassAnimals").on('hide.bs.modal', function(){
+        $("#glassAnimalsVideo").attr('src', '');
+    });
+
+    /* then the modal gets open, we asign the url for the video */
+    $("#glassAnimals").on('show.bs.modal', function(){
+        $("#glassAnimalsVideo").attr('src', url);
+    });
+});
+
+
+
+
+</script>
