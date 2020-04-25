@@ -70,7 +70,7 @@ body {
 .navbar .logo-subtitle {
   display: block;
   color: #202020;
-  text-transform: uppercase;
+  /*text-transform: uppercase; */
   font-size: 1.24em;
   margin-top: -15px;
   z-index: 100;
@@ -1010,7 +1010,7 @@ div#masonry:hover img:hover { opacity: 1; }
   display: inline-block;
 }
 .social-icons i {
-  color: #cee7ea;
+  color: #000;
   margin-right: 12px;
   font-size: 25px;
 }
