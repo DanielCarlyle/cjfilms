@@ -54,7 +54,7 @@ body {
 .navbar .logo-title {
   color: #151414;
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 28px;
   font-family: 'Scheherazade', serif;
   /* background-color: #355673; */
   /* background-image: linear-gradient(45deg, #17a2b8, #c7e7ea); */
@@ -72,7 +72,7 @@ body {
   color: #202020;
   text-transform: uppercase;
   font-size: 1.24em;
-  margin-top: -22px;
+  margin-top: -15px;
   z-index: 100;
   /* text-shadow: 1px 1px 1px #000; */
   font-family: 'montserrat', san-serif;
