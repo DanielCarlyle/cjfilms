@@ -222,7 +222,7 @@ font header .navbar-default .navbar-nav li a:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: .25rem 0em 1em;
+  padding: 2.25rem 0em 2em;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
