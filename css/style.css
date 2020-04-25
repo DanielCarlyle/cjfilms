@@ -291,6 +291,7 @@ div#masonry img {
   div#masonry img {  
     width: 33.3%;
     transition: .8s opacity;
+    padding: 10px;
   } 
 }
 
