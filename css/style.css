@@ -1,6 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
+@import url(https://fonts.googleapis.com/css2?family=Scheherazade&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
+
 /* var text-decoration */
 html {
   background-color: #ffffff;
@@ -48,27 +52,31 @@ body {
 }
 
 .navbar .logo-title {
-    /* color: #FFF; */
-    text-transform: uppercase;
-    font-size: 45px;
-    background-color: #355673;
-    background-image: linear-gradient(45deg, #17a2b8, #c7e7ea);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  color: #151414;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: 'Scheherazade', serif;
+  /* background-color: #355673; */
+  /* background-image: linear-gradient(45deg, #17a2b8, #c7e7ea); */
+  /* background-size: 100%; */
+  /* background-repeat: repeat; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /*-moz-background-clip: text; */
+  /*-moz-text-fill-color: transparent; */
+  font-weight: 800;
 }
 
 .navbar .logo-subtitle {
   display: block;
-  color: #b4b8b5;
+  color: #202020;
   text-transform: uppercase;
   font-size: 1.24em;
-  margin-top: -33px;
+  margin-top: -22px;
   z-index: 100;
-  text-shadow: 1px 1px 1px #000;
+  /* text-shadow: 1px 1px 1px #000; */
+  font-family: 'montserrat', san-serif;
+  font-size: 19px;
 }
 
 .social-icons-nav {
