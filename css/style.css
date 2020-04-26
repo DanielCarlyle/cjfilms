@@ -179,6 +179,12 @@ a:active {
   font-style: italic;
   color: #666;
 }
+
+.portfolio-page {
+  padding: 2em 0;
+
+}
+
 /*--
 	Header Start 
 --*/
