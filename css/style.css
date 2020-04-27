@@ -18,16 +18,18 @@ html, body {
 	Common Css
 --*/
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: gray;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  text-align: justify;
   width: 100%;
   height: 100vh;
-  /*margin-top: 6em; */
+  overflow-x: hidden;
+  /*margin-top: 6em; 
+    text-align: justify;
+  */
 }
 
 .bg-dark {
@@ -123,10 +125,11 @@ a {
 
 }
 
+/*
 a:visited {
   color: #00b8b8;
 }
-
+*/
 a:hover {
   color: #117a8b;
 }
@@ -260,7 +263,7 @@ header {
   width: 100%;
 }
 
-a {
+header a {
   background: transparent;
   margin: 0;
   padding: 0;
@@ -280,13 +283,13 @@ nav {
 }
 
 
-ul {
+header ul {
   display: -webkit-flex;
   display: flex;
   list-style: none;
 }
 
-ul li a {
+header ul li a {
   color: #000;
   margin: 0px 10px;
   padding: 10px;
@@ -349,29 +352,29 @@ ul li a {
   h1 {
       margin: 0 auto;
   }
-  ul {
+  header ul {
       -webkit-flex-direction: column;
       flex-direction: column;
       -webkit-justify-content: center;
       justify-content: center;
-      background: rgba(0, 0, 0, .8);
+      background: rgba(255, 255, 255, 0.78);
       position: absolute;
       top: 80px;
       left: 0px;
       width: 100%;
       z-index: 980;
   }
-  ul li {
+  header ul li {
       padding: 10px;
       text-align: center;
   }
-  ul li a {
+  header ul li a {
       display: block;
       background: transparent;
       margin: 0px;
       padding: 20px;
   }
-  ul li a:hover {
+  header ul li a:hover {
       color: #000;
       background: #fff;
   }
@@ -405,6 +408,17 @@ ul li a {
   font-weight: 800;
 }
 
+.logo-subtitle {
+  display: block;
+  color: #202020;
+  /*text-transform: uppercase; */
+  font-size: 1.24em;
+  margin-top: -10px;
+  z-index: 100;
+  /* text-shadow: 1px 1px 1px #000; */
+  font-family: 'montserrat', san-serif;
+  font-size: 19px;
+}
 
 
 /*---------------------------------------------
@@ -429,8 +443,8 @@ ul li a {
   margin: 0 auto;
   background: inherit;
   width: 100%;
-  max-width: 1200px;
-  height: 100vh;
+  max-width: 900px;
+  height: 75vh;
   /*
     height: 100vh;
   display: flex;
