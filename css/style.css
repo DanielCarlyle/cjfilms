@@ -628,11 +628,13 @@ div#masonry:hover img:hover { opacity: 1; }
   background-size: cover;
 }
 
+/*
 @media only screen and (min-width: 1300px) {
   .image-wrap {
     height: 50vw;
   }
 }
+*/
 
 .image-wrap img {
   width: 100%;
