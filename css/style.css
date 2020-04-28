@@ -47,6 +47,11 @@ body {
   border-color: #343a40;
 }
 
+.result li.active a {
+  color: lightgray;
+  cursor: default;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #000;
   font-weight: 600;
@@ -525,7 +530,8 @@ div#masonry {
   max-width: 8; 
 }
 div#masonry img {  
-  width: 50%;
+  width: 100%;
+  padding: 10px;
   transition: .8s opacity;
 } 
 
