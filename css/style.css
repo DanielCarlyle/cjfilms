@@ -1059,7 +1059,7 @@ div#masonry:hover img:hover { opacity: 1; }
   background-color: #ff432e;
 }
 #contact-box {
-  padding-top: 35px;
+  padding-top: 4em;
   padding-bottom: 58px;
 }
 #contact-box .block img {
@@ -1073,8 +1073,12 @@ div#masonry:hover img:hover { opacity: 1; }
   padding-bottom: 30px;
 }
 #contact-box .block p {
-  color: #5C5C5C;
+  color: #1d1b1b;
   display: block;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.6em;
+  font-size: 22px;
 }
 /*--
 	features-contact Start 
