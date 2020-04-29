@@ -303,6 +303,8 @@ header ul {
   display: -webkit-flex;
   display: flex;
   list-style: none;
+  margin-top: 38px;
+  font-size: 15px;
 }
 
 header ul li a {
@@ -390,7 +392,7 @@ margin-top: -10px;
 z-index: 100;
 /* text-shadow: 1px 1px 1px #000; */
 font-family: 'Scheherazade', serif;
-font-size: 1em;
+font-size: 29px;
 font-weight: 200;
 }
 
@@ -539,8 +541,8 @@ div#masonry img {
   div#masonry img {  
     width: 33.3%;
     transition: .8s opacity;
-    padding: 10px;
-  } 
+    padding: 0 10px 10px 10px;
+  }
 }
 
 
@@ -562,7 +564,8 @@ div#masonry:hover img:hover { opacity: 1; }
 	BIO SECTION
 --*/
 .bio-section{
-  padding: 2em 0;
+  /*padding: 2em 0; */
+  padding: 0;
   min-height: 85vh;
 }
 
