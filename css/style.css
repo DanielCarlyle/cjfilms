@@ -639,13 +639,11 @@ div#masonry:hover img:hover { opacity: 1; }
   height: 450px;
 }
 
-/*
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1500px) {
   .image-wrap {
-    height: 50vw;
+    height: 700px;
   }
 }
-*/
 
 .image-wrap img {
   width: 100%;
