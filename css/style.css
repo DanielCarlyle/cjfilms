@@ -635,6 +635,8 @@ div#masonry:hover img:hover { opacity: 1; }
   overflow: hidden;
   position: relative;
   background-size: cover;
+  background-position: center;
+  height: 450px;
 }
 
 /*
