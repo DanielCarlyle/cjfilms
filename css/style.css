@@ -991,7 +991,7 @@ div#masonry:hover img:hover { opacity: 1; }
 --*/
 #contact-form {
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 75px;
 }
 #contact-form .block form .form-group {
   padding-bottom: 15px;
