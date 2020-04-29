@@ -20,7 +20,7 @@ html, body {
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: gray;
+  color: #202020;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -308,7 +308,7 @@ header ul {
 }
 
 header ul li a {
-  color: #000;
+  color: #202020;
   margin: 0px 10px;
   padding: 10px;
   border-radius: 5px;
@@ -1068,12 +1068,12 @@ div#masonry:hover img:hover { opacity: 1; }
 #contact-box .block h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  color: #000;
+  color: #202020;
   font-size: 28px;
   padding-bottom: 30px;
 }
 #contact-box .block p {
-  color: #1d1b1b;
+  color: #202020;
   display: block;
   font-weight: 600;
   margin: 0;
