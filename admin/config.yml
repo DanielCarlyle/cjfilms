@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: https://github.com/DanielCarlyle/cjfilms
+  repo: github.com/DanielCarlyle/cjfilms
   branch: master
   site_domain: cjmfilms.netlify.app
 media_folder: "img"
