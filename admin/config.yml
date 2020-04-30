@@ -8,6 +8,16 @@ backend:
 media_folder: "img/clients"
 
 collections:
+  - name: "home-page-video"
+    label: "Home Page Video"
+    files:
+      - label: "home page video settings"
+        name: "site"
+        file: "_data/site.yml"     
+        fields: 
+          -  label: "Video"
+             name: "front_page_video"
+             widget: "text"
   - name: "website-settings"
     label: "Website settings"
     files:
