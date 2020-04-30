@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: github.com/DanielCarlyle/cjfilms
+  repo: https://github.com/DanielCarlyle/cjfilms
   branch: master
-  site_domain: cjmfilms.netlify.app
+  site_domain: https://cjmfilms.netlify.app
 media_folder: "img"
 collections:
   - name: "post" # Used in routes, e.g. /admin/collections/blog
