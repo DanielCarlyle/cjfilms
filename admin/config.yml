@@ -3,13 +3,18 @@ backend:
   repo: DanielCarlyle/cjfilms
   branch: master
   site_domain: cjmfilms.netlify.app
+
+
 media_folder: "img/clients"
+
 collections:
-  name: "website-settings"
-  label: "Website settings"
-  files:
-    - label: "Website settings"
-      name: "site"
-      file: "_data/site.yml"     
-      fields: 
-        -  {label: "bio_description", name: "bio_description", widget: "string"}
+  - name: "website-settings"
+    label: "Website settings"
+    files:
+      - label: "Website settings"
+        name: "site"
+        file: "_data/site.yml"     
+        fields: 
+          -  label: "bio_description"
+             name: "bio_description"
+             widget: "string"
