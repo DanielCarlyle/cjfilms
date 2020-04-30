@@ -15,6 +15,6 @@ collections:
         name: "site"
         file: "_data/site.yml"     
         fields: 
-          -  label: "bio_description"
+          -  label: "Bio Description"
              name: "bio_description"
-             widget: "string"
+             widget: "text"
