@@ -12,6 +12,4 @@ collections:
       name: "site"
       file: "_data/site.yml"     
       fields: 
-        - label: "bio_description"
-          name: "bio_description"
-          width: "string" 
+        -  {label: "bio_description", name: "bio_description", widget: "string"}
