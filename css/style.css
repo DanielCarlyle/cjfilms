@@ -502,7 +502,7 @@ font-weight: 200;
   margin: 0 auto;
   background: inherit;
   width: 100%;
-  max-width: 900px;
+  /*max-width: 900px; */
   height: 75vh;
   /*
     height: 100vh;
