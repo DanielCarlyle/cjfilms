@@ -364,9 +364,9 @@ header ul li a {
 }
 
 .logo {
-  margin-left: 10px;
+/*margin-left: 10px; */
 margin-right: auto;
-padding: 10px 26px;
+padding: 10px 8px;
 font-size: 15px;
 color: #151414;
 text-transform: uppercase;
