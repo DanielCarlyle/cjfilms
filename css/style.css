@@ -201,6 +201,10 @@ a:active {
   min-height: 75vh;
 }
 
+.portfolio-page p {
+  margin-bottom: 0;
+}
+
 /*--
 	Header Start 
 --*/
