@@ -586,6 +586,11 @@ div#masonry:hover img:hover { opacity: 1; }
   /*margin-top: 1em; */
 }
 
+.bio-section__copy p {
+margin-top: 0em;
+margin-bottom: 1.2em;
+line-height: 1.3;
+}
 
 
 /*--
