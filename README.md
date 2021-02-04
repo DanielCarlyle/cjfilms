@@ -1,6 +1,6 @@
 # cjfilms
-##Chris Malanchan Portfolio Website
-###[site link](https://cjmfilms.netlify.app/portfolio)
+## Chris Malanchan Portfolio Website
+### [site link](https://cjmfilms.netlify.app/portfolio)
 
 ![screencapture-cjmfilms-netlify-app-portfolio-2021-02-04-10_13_32](https://user-images.githubusercontent.com/9203795/106913136-afe2b380-66d1-11eb-9bc5-c68962497e01.png)
 
